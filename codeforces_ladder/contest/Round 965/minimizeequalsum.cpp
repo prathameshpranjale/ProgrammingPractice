@@ -10,23 +10,28 @@ using namespace std;
 int main()
 {
    FAST;
-   int test;
-   cin>>test;
+   int t;
+   cin>>t;
+   while(t--){
 
-   while(test--)
-   {
+    int n;
+    cin>>n;
 
-    int n,k;
-    cin>>n>>k;
     int arr[n];
-    for(int i=0;i<n;i++)
+    for(int i=0;i<n;i++){
         cin>>arr[i];
-
-    if(is_sorted(arr,arr+n) || k>1){
-        yes;
-    }else{
-        no;
     }
+    int arrq[n];
+    for(int i=0;i<n;i++){
+        arrq[i]= (arr[(i+1)%n]);
+
+    }
+
+    for(auto x:arrq){
+        cout<<x<<" ";
+    }
+    cout<<"\n";
+
    }
        return 0;
 }
