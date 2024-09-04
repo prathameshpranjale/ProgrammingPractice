@@ -1,2 +1,2 @@
 
-    cin>>a>>b>>c;
+        ans.push_back(arr[i]);
